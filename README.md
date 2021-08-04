@@ -4,7 +4,9 @@
 
 - Free - Opensource
 
-- Private (your links only) or Public (everybody can create short links, fine for an intranet)
+- View, Edit, Delete Link
+
+- Private (only you can see this) or Public (can see your link)
 
 - Bookmarks/Stars, Tracking Links
 
@@ -15,5 +17,3 @@
 - Set Passwords for Link
 
 - Expiration Time for Link
-
-- View, Edit, Delete Link
