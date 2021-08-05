@@ -36,6 +36,7 @@
 # mongodb
 
 - user login collection
+```
   - _id -> objectId
   - username -> string
   - email -> string
@@ -44,15 +45,19 @@
   - createdAt -> string
   - updatedAt -> string
   - isVerified -> boolean
+```
 
 - url collection
+```
   - _id
   - user_id (ref) -> (Nullable)
   - original_url
   - alias 
   - url_password
+```
 
 - analytics
+```
   - _id
   - url (ref)
   - clicks [         -> location, time, OS
@@ -72,6 +77,7 @@
       ],
     },
   ]
+```
 
 ## Client
 
