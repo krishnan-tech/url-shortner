@@ -1,3 +1,9 @@
-const Index = () => <div>hello world</div>;
+import { SampleComponent } from "../components/sampleComponent";
+
+const Index = () => (
+  <div>
+    hello world <SampleComponent />
+  </div>
+);
 
 export default Index;
