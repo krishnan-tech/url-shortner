@@ -4,9 +4,7 @@
 
 - Free - Opensource
 
-- View, Edit, Delete Link
-
-- Private (only you can see this) or Public (can see your link)
+- Private (your links only) or Public (everybody can create short links, fine for an intranet)
 
 - Bookmarks/Stars, Tracking Links
 
@@ -17,6 +15,8 @@
 - Set Passwords for Link
 
 - Expiration Time for Link
+
+- View, Edit, Delete Link
 
 # How to start it
 
@@ -36,8 +36,7 @@
 # mongodb
 
 - user login collection
-
-  - \_id -> objectId
+  - _id -> objectId
   - username -> string
   - email -> string
   - password -> string
@@ -47,33 +46,32 @@
   - isVerified -> boolean
 
 - url collection
-
-  - \_id
+  - _id
   - user_id (ref) -> (Nullable)
   - original_url
-  - alias
+  - alias 
   - url_password
 
 - analytics
-  - \_id
+  - _id
   - url (ref)
-  - clicks [ -> location, time, OS
+  - clicks [         -> location, time, OS
     {
-    country: "IN",
-    time: [
-    {
-    10:00: [
-    {location, os},
-    {location, os},
-    ],
-    10:01: [
-    {location, os},
-    {location, os},
-    ]
+      country: "IN",
+      time: [
+        {
+          10:00: [
+            {location, os},
+            {location, os},
+          ],
+          10:01: [
+            {location, os},
+            {location, os},
+          ]
+        },
+      ],
     },
-    ],
-    },
-    ]
+  ]
 
 ## Client
 
