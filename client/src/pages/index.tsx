@@ -2,7 +2,7 @@ import { SampleComponent } from "../components/sampleComponent";
 
 const Index = () => (
   <div>
-    hello world <SampleComponent />
+    hello world!! <SampleComponent />
   </div>
 );
 
